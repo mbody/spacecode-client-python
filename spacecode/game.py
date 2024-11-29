@@ -16,9 +16,8 @@ class Game:
         self.color = color
         self.currentPlayer = Player()
         self.enemies = [] 
-        self.screenWidth = 400
-        self.screenHeight = 400
-
+        self.screenWidth = globals.screenWidth
+        self.screenHeight = globals.screenHeight
 
         sio.connect(url)
         sio.emit("newPlayer", {"username": username, "color": color}, callback=lambda data: self.onInitGame(data))

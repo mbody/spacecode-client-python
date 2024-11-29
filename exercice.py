@@ -9,7 +9,7 @@ import random
 # EXERCICE : We want our spacehip to patrol in a four direction square loop, clockwise and starting from the top left corner
 
 
-# 1. Connect to a new game with a valid host or ip address, with your name and choose the color of your player
+# 1. Connect to a new game with a valid host or ip address, with your name and choose the color of your player (color is a string as any css color cf. https://www.w3schools.com/cssref/css_colors_legal.php)
 game = Game(host="localhost", username="YOUR NAME", color=Color.getRandomColor())
 
 # Define a variable me with your player instance : your spaceship !
